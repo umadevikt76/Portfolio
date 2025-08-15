@@ -1,72 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Umadevi Kilathur Tharanitharan - Portfolio</title>
-
-<!-- Open Graph -->
-<meta property="og:title" content="Umadevi Kilathur Tharanitharan - Strategic Product & Transformation Leader" />
-<meta property="og:description" content="From Vision to Velocity — Transforming the Digital Ecosystem with AI" />
-<meta property="og:image" content="og_preview_from_uploaded_portfolio_HQ.png" />
-<meta property="og:type" content="website" />
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Umadevi Kilathur Tharanitharan - Strategic Product & Transformation Leader" />
-<meta name="twitter:description" content="From Vision to Velocity — Transforming the Digital Ecosystem with AI" />
-<meta name="twitter:image" content="og_preview_from_uploaded_portfolio_HQ.png" />
-
-<style>
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-}
-h1, h2, h3 {
-    color: #00bfa6;
-}
-.section {
-    margin-bottom: 30px;
-}
-.qr {
-    margin-top: 20px;
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Umadevi Kilathur — VP, Digital Commerce & Data Platforms (Visual Resume)</title>
+  <meta name="description" content="Non-ATS infographic resume — VP, Digital Commerce & Data Platform Portfolio: digital commerce, data platforms, AI, embedded finance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#000000;
+      --fg:#E9F1F1;
+      --muted:#A9B5B5;
+      --accent:#00BFA6;
+      --card:#0D0D0D;
+      --line:#1A1A1A;
+      --max:1120px;
+      --radius:14px;
+      --shadow:0 8px 30px rgba(0,0,0,.45);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      color:var(--fg);
+      background:var(--bg);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin-inline:auto; padding-inline:24px}
+    header{
+      position:relative; padding:64px 0 40px; overflow:hidden;
+      background:
+        radial-gradient(1200px 600px at 80% -20%, rgba(0,191,166,.10), transparent 60%),
+        radial-gradient(900px 400px at -10% -10%, rgba(0,191,166,.10), transparent 55%);
+      border-bottom:1px solid var(--line);
+    }
+    .kicker{display:inline-block; padding:6px 10px; border:1px solid #1e1e1e; border-radius:999px; color:var(--muted); font-size:.85rem; letter-spacing:.3px}
+    h1{font-size:clamp(2rem, 3.4vw, 3rem); margin:.4rem 0 .25rem; line-height:1.1; font-weight:800}
+    .headline{font-size:clamp(1.15rem,1.8vw,1.4rem); color:#cfeee7; margin-top:6px}
+    .subtitle{color:var(--muted); font-weight:400}
+    .lead{margin-top:16px; max-width:980px; color:#D6E7E7; font-size:1.05rem}
+    .contact{display:flex; flex-wrap:wrap; gap:14px; margin-top:18px; color:var(--muted); font-size:.95rem;}
+    .contact a{color:#CDEEEE}
+    .idrow{display:flex; gap:20px; align-items:center; margin-top:18px}
+    .qr{width:132px; height:132px; border:1px solid #153c36; border-radius:10px; background:#0c1c1a; display:flex; align-items:center; justify-content:center}
+    .qr img{display:block; width:100%; height:100%; object-fit:contain; border-radius:10px}
+    section{padding:44px 0; border-bottom:1px solid var(--line)}
+    .section-title{font-size:1.25rem; letter-spacing:.3px; color:#CFEFEF; margin:0 0 16px; font-weight:700}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.00)); border:1px solid #121212; border-radius:var(--radius); padding:22px; box-shadow:var(--shadow)}
+    .metrics{display:grid; gap:16px; grid-template-columns:repeat(6, minmax(0,1fr))}
+    .metric{background:var(--card); border:1px solid #121212; border-radius:12px; padding:18px 16px; text-align:center}
+    .metric .num{font-size:1.4rem; font-weight:800; color:var(--accent)}
+    .metric .label{color:var(--muted); font-size:.9rem}
+    .skills{display:grid; gap:14px; grid-template-columns:repeat(4, minmax(0,1fr))}
+    .skill{background:var(--card); border:1px solid #121212; padding:14px 16px; border-radius:10px; color:#D8EAEA}
+    .skill small{display:block; color:#9fded6; margin-top:6px}
+    .timeline{display:grid; gap:16px}
+    .item{display:grid; gap:16px; grid-template-columns:160px 1fr; padding:18px; background:var(--card); border:1px solid #121212; border-radius:12px}
+    .when{color:var(--muted); font-size:.9rem}
+    .role{font-weight:800}
+    .org{color:#DEF5F2; font-weight:700}
+    .bullets{margin:6px 0 0 18px}
+    .bullets li{margin:.35rem 0}
+    .grid2{display:grid; gap:12px; grid-template-columns:repeat(2, minmax(0,1fr))}
+    .pill{display:inline-block;background:#0c1c1a;border:1px solid #153c36;color:#bfeee7;padding:8px 12px;border-radius:999px;font-size:.92rem}
+    @media (max-width: 1080px){
+      .metrics{grid-template-columns:repeat(3, minmax(0,1fr))}
+      .skills{grid-template-columns:repeat(2, minmax(0,1fr))}
+      .item{grid-template-columns:1fr}
+      .grid2{grid-template-columns:1fr}
+    }
+    @media (max-width: 560px){
+      .metrics{grid-template-columns:repeat(2, minmax(0,1fr))}
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="wrap">
+      <span class="kicker">Target • VP, Digital Commerce & Data Platform Portfolio</span>
+      <h1>Umadevi Kilathur Tharanitharan</h1>
+      <div class="headline">Scaling API-first commerce & data platforms with AI to deliver <strong>€120M+</strong> in outcomes, <strong>35%</strong> faster launches, and <strong>22%+</strong> ARR growth.</div>
+      <p class="lead"><strong>Brief Value Summary:</strong> 20+ years leading global product & technology portfolios across fintech, SaaS, and embedded finance. Built AI-enabled, microservices platforms that boosted adoption by <strong>150%</strong>, reduced onboarding time by <strong>40–60%</strong>, and maintained <strong>99.97%</strong> uptime during critical migrations. Led teams across EU/US/APAC; managed budgets up to <strong>€90M+</strong>; delivered <strong>95%</strong> on/under budget.</p>
+      <div class="idrow">
+        <div class="contact">
+          <span>📍 Dublin, Ireland</span>
+          <a href="mailto:umadevi.kilathur@gmail.com">umadevi.kilathur@gmail.com</a>
+          <a href="tel:+353894591263">+353 89 459 1263</a>
+          <a href="https://www.linkedin.com/in/umadevikilathur" target="_blank" rel="noopener">linkedin.com/in/umadevikilathur</a>
+        </div>
+        <div class="qr" aria-label="LinkedIn QR">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=132x132&data=https://www.linkedin.com/in/umadevikilathur" alt="QR code to LinkedIn profile">
+        </div>
+      </div>
+    </div>
+  </header>
 
-<h1>Umadevi Kilathur Tharanitharan</h1>
-<h2>Strategic Product & Transformation Leader</h2>
-<p>From Vision to Velocity — Transforming the Digital Ecosystem with AI</p>
+  <main class="wrap">
+    <!-- Portfolio Snapshot -->
+    <section aria-labelledby="snap">
+      <h2 id="snap" class="section-title">Portfolio Snapshot — Results at a Glance</h2>
+      <div class="metrics">
+        <div class="metric"><div class="num">€120M+</div><div class="label">Programme outcomes</div></div>
+        <div class="metric"><div class="num">150%</div><div class="label">Adoption growth</div></div>
+        <div class="metric"><div class="num">35% faster</div><div class="label">Time-to-market</div></div>
+        <div class="metric"><div class="num">22%+</div><div class="label">ARR uplift</div></div>
+        <div class="metric"><div class="num">60% faster</div><div class="label">FI onboarding</div></div>
+        <div class="metric"><div class="num">99.97%</div><div class="label">Uptime in migrations</div></div>
+      </div>
+    </section>
 
-<div class="section">
-<h3>Value Summary</h3>
-<p>Product and transformation leader specialising in API‑first commerce, AI integration, and data platform strategy. Proven ability to deliver measurable results — €120M+ in programme outcomes, 35% faster launch cycles, and 22%+ ARR growth.</p>
-</div>
+    <!-- Core Expertise (now with quantifiers) -->
+    <section aria-labelledby="core">
+      <h2 id="core" class="section-title">Core Expertise — Scale, Spend & Scope</h2>
+      <div class="skills">
+        <div class="skill">Digital Commerce Strategy & Leadership<small>Led 12+ programs • €90M+ budgets • 3 regions</small></div>
+        <div class="skill">Data Platform Strategy & Governance<small>Single-data model • 10+ pipelines • 70% recon time saved</small></div>
+        <div class="skill">AI/ML Integration & Analytics<small>300% ROI personalization • 38% better fraud detection</small></div>
+        <div class="skill">API-First, Microservices, Cloud-Native<small>30+ services • 200% throughput • 40% cost down</small></div>
+        <div class="skill">Embedded Finance in Ecommerce<small>+20% conversion • 25% CX uplift • 150% adoption</small></div>
+        <div class="skill">Portfolio & Investment Governance<small>95% on/under budget • 98% milestone hit rate</small></div>
+        <div class="skill">Product Ops & KPI Frameworks<small>QBR cadence • 30+ KPIs • 25% release velocity</small></div>
+        <div class="skill">Compliance & Standards<small>PSD2 • ISO 20022 • GDPR • SWIFT readiness</small></div>
+      </div>
+    </section>
 
-<div class="section">
-<h3>Core Competencies</h3>
-<ul>
-<li>Digital Transformation Leadership</li>
-<li>AI Product Management</li>
-<li>SaaS Scaling</li>
-<li>Fintech & Payments Innovation</li>
-<li>Enterprise Systems Integration</li>
-<li>Data Analytics & Insights</li>
-<li>Agile, Scrum, SAFe Delivery</li>
-<li>Cloud-Native Architecture</li>
-<li>Strategic Partnerships</li>
-<li>Change Management</li>
-</ul>
-</div>
+    <!-- Experience Timeline -->
+    <section aria-labelledby="exp">
+      <h2 id="exp" class="section-title">Experience — Measurable Impact</h2>
+      <div class="timeline">
+        <article class="item">
+          <div class="when">Sep 2023 — Present</div>
+          <div>
+            <div class="role">Director, Technology & Strategy <span class="org">— Open Payments</span></div>
+            <ul class="bullets">
+              <li>Directed a <strong>€120M+</strong> portfolio; achieved <strong>35%</strong> faster launches via KPI/QBR and Agile governance.</li>
+              <li>Built a transformation office spanning <strong>12+</strong> initiatives; <strong>40%</strong> program risk reduction; <strong>98%</strong> milestone attainment.</li>
+              <li>AI-assisted ops reduced manual exceptions by <strong>50%</strong> and improved accuracy; established low-latency, cloud-native observability.</li>
+            </ul>
+            <span class="pill">API-first • Cloud-native • AI workflows • KPI/QBR</span>
+          </div>
+        </article>
 
-<div class="section qr">
-<h3>Connect with Me</h3>
-<p><img src="linkedin_qr.png" alt="LinkedIn QR Code" width="150"></p>
-</div>
+        <article class="item">
+          <div class="when">Jan 2021 — Sep 2023</div>
+          <div>
+            <div class="role">Vice President <span class="org">— Volante Technologies</span></div>
+            <ul class="bullets">
+              <li>Transitioned to product-led SaaS; delivered <strong>+22% ARR</strong> on a <strong>€90M</strong> portfolio; <strong>95%</strong> projects on/under budget.</li>
+              <li>Launched 3 flagship products; <strong>35%</strong> faster time-to-market and <strong>€15M</strong> incremental ARR; expanded partner ecosystem.</li>
+              <li>Modernized core payments to API-first microservices, boosting throughput and reliability for tier-one banks.</li>
+            </ul>
+            <span class="pill">Portfolio governance • GTM analytics • Partners</span>
+          </div>
+        </article>
 
+        <article class="item">
+          <div class="when">2016 — 2020</div>
+          <div>
+            <div class="role">Director, Product Delivery <span class="org">— National Payments Corporation of India</span></div>
+            <ul class="bullets">
+              <li>Delivered ERP & core payments consolidation across <strong>15+</strong> BUs with <strong>99.97%</strong> uptime during migrations.</li>
+              <li>Managed <strong>€50M+</strong> P&L; realized <strong>€8M</strong> cost synergies via vendor consolidation and architecture simplification.</li>
+              <li>Drove ISO 20022 & SWIFT-compliant systems and real-time payments modernization at national scale.</li>
+            </ul>
+            <span class="pill">ISO 20022 • SWIFT • Real-time payments</span>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="when">2011 — 2015</div>
+          <div>
+            <div class="role">Manager, Product Line Management <span class="org">— Vestas Technologies</span></div>
+            <ul class="bullets">
+              <li>Introduced Agile & cloud-first delivery; improved efficiency by <strong>70%</strong> and reduced downtime by <strong>40%</strong>.</li>
+              <li>Scaled CI/CD across <strong>6</strong> teams; cut release cycle time by <strong>30%</strong>.</li>
+            </ul>
+            <span class="pill">Agile at scale • CI/CD • Cloud</span>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="when">2000 — 2011</div>
+          <div>
+            <div class="role">Program & Product Roles <span class="org">— Oracle • Orisys • Alcatel-Lucent</span></div>
+            <ul class="bullets">
+              <li>Directed <strong>€25M+</strong> multi-country technology programs, delivering <strong>30%</strong> faster than industry benchmarks.</li>
+              <li>Coordinated telecom rollouts across <strong>7</strong> countries; improved SLA adherence by <strong>20%</strong>.</li>
+            </ul>
+            <span class="pill">Enterprise software • Telecom • Global delivery</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Renamed alignment section -->
+    <section aria-labelledby="match">
+      <h2 id="match" class="section-title">Portfolio Leadership Match & Impact Levers</h2>
+      <div class="grid2">
+        <div class="panel">
+          <strong>What the Role Demands</strong>
+          <ul class="bullets">
+            <li>Lead end-to-end digital commerce & data platform portfolio.</li>
+            <li>Operationalize AI/ML for measurable UX & revenue impact.</li>
+            <li>Own modern architecture: API-first, microservices, event-driven, DDD.</li>
+            <li>Drive B2B commerce UX with quantifiable conversion gains.</li>
+            <li>Sequence roadmap, manage investment, track KPIs.</li>
+            <li>Build teams and cross-site ways of working.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <strong>How I Deliver (with Numbers)</strong>
+          <ul class="bullets">
+            <li><strong>€120M+</strong> portfolio leadership; <strong>95%</strong> on/under budget; <strong>98%</strong> milestones met.</li>
+            <li><strong>300% ROI</strong> from AI-led personalization; <strong>38%</strong> better fraud detection.</li>
+            <li>API-first replatforming across <strong>30+</strong> services; <strong>200%</strong> throughput; <strong>40%</strong> cost down.</li>
+            <li><strong>+20%</strong> checkout conversion; <strong>+25%</strong> CSAT; <strong>150%</strong> adoption growth.</li>
+            <li>Roadmap governance (QBR/OKR) with <strong>30+</strong> KPIs; <strong>35%</strong> faster launch cycles.</li>
+            <li>Built transformation office covering <strong>12+</strong> programs across EU/US/APAC.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section aria-labelledby="edu">
+      <h2 id="edu" class="section-title">Education & Certifications</h2>
+      <div class="grid2">
+        <div class="panel">
+          <strong>MSc Enterprise Systems</strong><br/>
+          University of Galway — Graduated with distinction-relevant coursework in enterprise architectures & analytics.
+        </div>
+        <div class="panel">
+          <strong>Certifications</strong><br/>
+          SAFe 5.0 Agilist & Architect • PMP • ITIL • Lean Six Sigma (Green Belt) • ISO 20022 • PSD2 • GDPR • Cloud (Foundational)
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap" style="padding:28px 0; color:var(--muted)">
+    © <span id="year"></span> Umadevi Kilathur — Visual resume
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
